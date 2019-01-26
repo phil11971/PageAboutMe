@@ -5,7 +5,7 @@ var	notify = require('gulp-notify');
 var	plumber = require('gulp-plumber');
 
 gulp.task('less', function(){
-	return gulp.src('./app/less/main.less')
+	return gulp.src('./mypage/less/main.less')
 		.pipe(plumber({
 			errorHandler: notify.onError(function(err){
 				return{
@@ -22,11 +22,11 @@ gulp.task('less', function(){
 
 gulp.task('server', gulp.series('less', function(){
 	browserSync.init({
-		server: { baseDir: './app/'}
+		server: { baseDir: './mypage/'}
 	});
-	gulp.watch('app/**/*.html').on('change', browserSync.reload);
-    gulp.watch('app/**/*.js').on('change', browserSync.reload);
-	gulp.watch('app/less/**/*.less', gulp.series('less'));
+	gulp.watch('mypage/**/*.html').on('change', browserSync.reload);
+    gulp.watch('mypage/**/*.js').on('change', browserSync.reload);
+	gulp.watch('mypage/less/**/*.less', gulp.series('less'));
 
 }));
 
