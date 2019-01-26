@@ -25,6 +25,7 @@ gulp.task('server', gulp.series('less', function(){
 		server: { baseDir: './app/'}
 	});
 	gulp.watch('app/**/*.html').on('change', browserSync.reload);
+    gulp.watch('app/**/*.js').on('change', browserSync.reload);
 	gulp.watch('app/less/**/*.less', gulp.series('less'));
 
 }));
