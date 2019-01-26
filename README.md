@@ -17,4 +17,5 @@ npm i browser-sync gulp-less gulp-notify gulp-plumber - подключили п�
 Запустить gulp командой gulp и вести разработку
 
 Подсоединяем bootstrap и jQuery
+
 На Google Fonts настраиваем шрифты и добавляем их в index.html
