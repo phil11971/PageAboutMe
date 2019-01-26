@@ -1,12 +1,13 @@
 table {
     width: 100%;
-    border: 1px solid #e6e6e6;
+    border: 1px solid @backColor;
     border-collapse: collapse;
     background-color: #fff;
+    font-family: 'Noto Sans', sans-serif;
 } 
 
 tr {
-    border: 1px solid #e6e6e6;
+    border: 1px solid @backColor;
 }
 
 tr:first-child {
@@ -15,11 +16,11 @@ tr:first-child {
 }
 
 tr:last-child {
-    height: 100px;
+    height: 80px;
 }
 
 td {
     height: 35px;
-    border: 1px solid #e6e6e6;
+    border: 1px solid @backColor;
     padding: 5px 5px;
 }
