@@ -16,7 +16,7 @@ gulp.task('less', function(){
 			})
 		}))
 		.pipe(less())
-		.pipe(gulp.dest('./app/css'))
+		.pipe(gulp.dest('./mypage//css'))
 		.pipe(browserSync.stream());
 });
 
