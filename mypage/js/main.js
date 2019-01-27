@@ -9,7 +9,7 @@ $(document).ready(function(){
         modal.fadeIn();
     }); 
     
-    $('.modal').click(function() {
+    modal.click(function() {
         wrap.on('click', function(event) {
           var select = $('.content');
           if ($(event.target).closest(select).length)
